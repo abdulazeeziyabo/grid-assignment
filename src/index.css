@@ -23,20 +23,20 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgb(14, 14, 14);
-  margin: 0;
+  background-color: white;
+  margin: 0 auto;
+  max-width: 600px;
+  width: 100%;
 
 }
 
 .row {
   display: flex;
-  background-color: white;
+  justify-content: center;
+  
   
 }
-.row:nth-last-col{
-  border: 1px solid ;
-  
-}
+
 
 .cell {
   width: 150px;

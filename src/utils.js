@@ -1,7 +1,7 @@
 export const range = (start, end, step = 1) => {
   let output = [];
   // solve this range utility
-  if (typeof end === 'undefined'){
+  if (end === undefined){
     end = start;
     start = 0
   }

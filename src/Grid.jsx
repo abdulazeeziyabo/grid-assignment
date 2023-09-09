@@ -1,14 +1,17 @@
 // Grid.js
-import React from 'react';
-import { range } from './utils';
+import React from "react";
+import { range } from "./utils";
 
 function Grid({ numRows, numCols }) {
+  const rows = range(numRows);
+  const cols = range(numCols);
+
   return (
-    <div className="grid">
-      {range(numRows).map((rowIndex) => (
-        <div key={`row-${rowIndex}`} className="row">
-          {range(numCols).map((colIndex) => (
-            <div key={`col-${colIndex}`} className="cell"></div>
+    <div className='grid'>
+      {rows.map((rowIndex) => (
+        <div key={rowIndex} className='row'>
+          {cols.map((colIndex) => (
+            <div key={colIndex} className='cell'></div>
           ))}
         </div>
       ))}
@@ -17,4 +20,3 @@ function Grid({ numRows, numCols }) {
 }
 
 export default Grid;
-
